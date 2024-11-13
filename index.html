@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nantume Flavia</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    /* Global Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      background-color: #e6f2ff; /* Light blue background */
+      scroll-behavior: smooth; /* Smooth scroll */
+    }
+
+    /* Header Styles */
+    header {
+      background-color: #4a90e2; /* Medium light blue */
+      color: #fff;
+      display: flex;
+      align-items: center;
+      padding: 1rem 2rem;
+      gap: 1rem;
+    }
+
+    .profile-picture img {
+      border-radius: 50%;
+      width: 100px;
+      height: auto;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      flex: 1;
+      gap: 2rem;
+    }
+
+    .header-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: white;
+    }
+
+    header nav {
+      margin-left: auto;
+    }
+
+    header nav ul {
+      list-style-type: none;
+      display: flex;
+      gap: 1rem;
+      margin: 0;
+    }
+
+    header nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+      display: flex;
+      align-items: center;
+      transition: color 0.3s;
+    }
+
+    header nav a:hover {
+      color: #b3d4fc; /* Lighter blue on hover */
+    }
+
+    header nav a i {
+      margin-right: 0.5rem;
+    }
+
+    /* Main Content Styles */
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+
+    section {
+      margin-bottom: 2rem;
+      padding: 1rem;
+      background-color: #ffffff; /* White background */
+      border-radius: 8px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      color: #4a90e2; /* Medium light blue */
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .education-list, .experience-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1rem;
+    }
+
+    .education-item, .experience-item {
+      border: 1px solid #d1eaff; /* Very light blue border */
+      padding: 1rem;
+      border-radius: 8px;
+      background-color: #f0f8ff; /* Light blue background for content items */
+    }
+
+    /* Footer Styles */
+    footer {
+      background-color: #4a90e2; /* Medium light blue */
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      header nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .profile-picture img {
+        width: 80px;
+      }
+
+      .education-list, .experience-list {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="profile-picture">
+      <img src="picture.jpg" alt="Nantume Flavia">
+    </div>
+    <div class="header-content">
+      <div class="header-title">Nantume Flavia - BRAM student at COCIS</div>
+      <nav>
+        <ul>
+          <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+          <li><a href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
+          <li><a href="#hobbies"><i class="fas fa-lightbulb"></i> Hobbies</a></li>
+          <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="education">
+      <h2>Education</h2>
+      <div class="education-list">
+        <div class="education-item">
+          <h3>Makerere University</h3>
+          <p>Bachelor of Records and Archives Management (2020 - Present)</p>
+        </div>
+        <div class="education-item">
+          <h3>Wampeewo Ntake Senior Secondary School</h3>
+          <p>2017 - 2018</p>
+        </div>
+        <div class="education-item">
+          <h3>Eden High School</h3>
+          <p>2013 - 2016</p>
+        </div>
+        <div class="education-item">
+          <h3>Wampeewo Primary School</h3>
+          <p>2011 - 2012</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="experience-list">
+        <div class="experience-item">
+          <h3>School Secretary</h3>
+          <p>Hebron Junior School, Entebbe (2023)</p>
+        </div>
+        <div class="experience-item">
+          <h3>School Secretary</h3>
+          <p>Star Junior School, Entebbe (2024)</p>
+        </div>
+        <div class="experience-item">
+          <h3>Student Intern</h3>
+          <p>Senate Building, Academic Registry's Department (2022)</p>
+          <p>Managed records</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="hobbies">
+      <h2>Hobbies</h2>
+      <ul>
+        <li>Listening to music</li>
+        <li>Watching movies</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: flavianantume@gmail.com</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Nantume Flavia. All rights reserved.</p>
+  </footer>
+</body>
+</html>
